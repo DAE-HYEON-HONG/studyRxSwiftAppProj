@@ -14,8 +14,12 @@
 		DE414FA7283783F10093D487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE414FA5283783F10093D487 /* Main.storyboard */; };
 		DE414FA9283783F60093D487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE414FA8283783F60093D487 /* Assets.xcassets */; };
 		DE414FAC283783F60093D487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE414FAA283783F60093D487 /* LaunchScreen.storyboard */; };
-		DE414FBA2839AB790093D487 /* LoadingVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FB92839AB790093D487 /* LoadingVCModel.swift */; };
+		DE414FBA2839AB790093D487 /* loginBusinessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FB92839AB790093D487 /* loginBusinessModel.swift */; };
 		DE414FBC2839B02B0093D487 /* colorSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FBB2839B02B0093D487 /* colorSet.swift */; };
+		DE414FBF2839B8EB0093D487 /* userInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FBE2839B8EB0093D487 /* userInfo.swift */; };
+		DE414FC12839B9DF0093D487 /* loginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FC02839B9DF0093D487 /* loginModel.swift */; };
+		DE414FC32839BF0D0093D487 /* userInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FC22839BF0D0093D487 /* userInfoModel.swift */; };
+		DE414FC62839CAF90093D487 /* LoadingVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE414FC52839CAF90093D487 /* LoadingVCModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +34,12 @@
 		DE414FA8283783F60093D487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE414FAB283783F60093D487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE414FAD283783F60093D487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE414FB92839AB790093D487 /* LoadingVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVCModel.swift; sourceTree = "<group>"; };
+		DE414FB92839AB790093D487 /* loginBusinessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginBusinessModel.swift; sourceTree = "<group>"; };
 		DE414FBB2839B02B0093D487 /* colorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorSet.swift; sourceTree = "<group>"; };
+		DE414FBE2839B8EB0093D487 /* userInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfo.swift; sourceTree = "<group>"; };
+		DE414FC02839B9DF0093D487 /* loginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginModel.swift; sourceTree = "<group>"; };
+		DE414FC22839BF0D0093D487 /* userInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userInfoModel.swift; sourceTree = "<group>"; };
+		DE414FC52839CAF90093D487 /* LoadingVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVCModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,8 @@
 		DE414F9E283783F10093D487 /* MVVMmySelf */ = {
 			isa = PBXGroup;
 			children = (
-				DE414FB72839AB3E0093D487 /* model */,
+				DE414FC42839C07E0093D487 /* businessModel */,
+				DE414FBD2839B8CF0093D487 /* entity */,
 				DE414FB62837842C0093D487 /* resource */,
 				DE414FB52837841C0093D487 /* storyboard */,
 				DE414FB4283784120093D487 /* view */,
@@ -124,25 +133,36 @@
 		DE414FB62837842C0093D487 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				DE414FA8283783F60093D487 /* Assets.xcassets */,
+				DE414FBE2839B8EB0093D487 /* userInfo.swift */,
 				DE414FBB2839B02B0093D487 /* colorSet.swift */,
+				DE414FA8283783F60093D487 /* Assets.xcassets */,
 			);
 			path = resource;
-			sourceTree = "<group>";
-		};
-		DE414FB72839AB3E0093D487 /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		DE414FB82839AB480093D487 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				DE414FB92839AB790093D487 /* LoadingVCModel.swift */,
+				DE414FC52839CAF90093D487 /* LoadingVCModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		DE414FBD2839B8CF0093D487 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				DE414FC02839B9DF0093D487 /* loginModel.swift */,
+				DE414FC22839BF0D0093D487 /* userInfoModel.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		DE414FC42839C07E0093D487 /* businessModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE414FB92839AB790093D487 /* loginBusinessModel.swift */,
+			);
+			path = businessModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,10 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE414FC62839CAF90093D487 /* LoadingVCModel.swift in Sources */,
+				DE414FBF2839B8EB0093D487 /* userInfo.swift in Sources */,
 				DE414FA4283783F10093D487 /* LoadingVC.swift in Sources */,
+				DE414FC32839BF0D0093D487 /* userInfoModel.swift in Sources */,
 				DE414FA0283783F10093D487 /* AppDelegate.swift in Sources */,
 				DE414FA2283783F10093D487 /* SceneDelegate.swift in Sources */,
-				DE414FBA2839AB790093D487 /* LoadingVCModel.swift in Sources */,
+				DE414FBA2839AB790093D487 /* loginBusinessModel.swift in Sources */,
+				DE414FC12839B9DF0093D487 /* loginModel.swift in Sources */,
 				DE414FBC2839B02B0093D487 /* colorSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +438,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMKUX76LZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVMmySelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -442,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMKUX76LZW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MVVMmySelf/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

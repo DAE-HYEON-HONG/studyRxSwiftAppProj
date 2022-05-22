@@ -7,8 +7,11 @@
 
 import Foundation
 import RxCocoa
-import RxSwift
 
 struct LoadingVCModel {
+    var autoLoginUser: PublishRelay<UserInfoModel?> = PublishRelay<UserInfoModel?>()
     
+    init(model: loginBusinessModel = loginBusinessModel()){
+        
+    }
 }

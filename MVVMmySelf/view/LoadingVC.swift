@@ -18,7 +18,7 @@ class LoadingVC: UIViewController {
         didSet{
             self.mainLogo.layer.cornerRadius = 8
             self.mainLogo.clipsToBounds = true
-            self.mainLogo.backgroundColor = 
+            self.mainLogo.backgroundColor = colorSet.mainColor
         }
     }
     
